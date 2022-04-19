@@ -1,0 +1,74 @@
+.popular__items {
+  margin-top: 150px;
+  .popular__title {
+    font-size: 44px;
+    color: $black;
+    margin-bottom: 2rem;
+  }
+  .popular__desc {
+    font-size: 1rem;
+    font-weight: 300;
+    color: $gris-p;
+  }
+
+  .popular__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px;
+    margin-top: 49px;
+    justify-content: center;
+
+    .popular__card {
+      width: 310px;
+      height: 500px;
+      border-radius: 20px;
+      background-color: white;
+      overflow: hidden;
+      position: relative;
+
+      .popular__card-img {
+        width: 100%;
+        height: 200px;
+        display: block;
+        object-fit: cover;
+      }
+
+      .popular__card-body {
+        padding: 1rem 2rem;
+
+        .card__body-title {
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        .card__body-desc {
+          font-size: 14px;
+          font-weight: 300;
+          color: $gris-p;
+          margin: 0.5rem 0;
+        }
+
+        .card__body-price {
+          font-size: 20px;
+        }
+
+        .card__body-cant {
+          position: absolute;
+          bottom: 20px;
+          button {
+            padding: 0.5rem 1rem;
+            border: 1px solid $btn-cant;
+            background-color: transparent;
+            border-radius: 8px;
+            color: $btn-cant;
+            font-weight: 600;
+            font-family: inherit;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
